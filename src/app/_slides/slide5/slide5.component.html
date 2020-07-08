@@ -1,0 +1,90 @@
+<article class="slide slide--code">
+  <header>
+    <h1>BEM</h1>
+  </header>
+  <section>
+    <h3>HTML</h3>
+    <pre class="prettyprint">
+<code class="lang-html">
+  &lt;section class="section"&gt;
+    &lt;h2 class="section__title"&gt;Articles&lt;/h2&gt;
+    &lt;div class="section__body"&gt;
+        &lt;card class="card card--modified"&gt;
+            &lt;h3 class="card__title"&gt;Article&lt;/h3&gt;
+            &lt;img class="card__image" src="assets/img/css-outline.png" alt="an image"&gt;
+            &lt;p class="card__text"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;
+            &lt;button class="card__button"&gt;Click me&lt;/button&gt;
+        &lt;/article&gt;
+        &lt;article class="card"&gt;
+            &lt;h3 class="card__title card__title--alt"&gt;Article&lt;/h3&gt;
+            &lt;img class="card__image" src="assets/img/css-outline.png" alt="an image"&gt;
+            &lt;p class="card__text"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;
+            &lt;button class="card__button"&gt;Click me&lt;/button&gt;
+        &lt;/article&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+      </code>
+    </pre>
+  </section>
+  <section>
+    <h3>CSS</h3>
+    <pre class="prettyprint">
+      <code class="lang-css">
+  .section &#123;
+    background-color: gainsboro;
+    padding: 16px;
+  &#125;
+  .section__body &#123;
+    display: flex;
+  &#125;
+  .section__title &#123;
+    color: darkslategrey;
+    margin-top: 0;
+    margin-bottom: 16px;
+  &#125;
+  .card &#123;
+    background-color: white;
+    max-width: 150px;
+    padding: 16px;
+  &#125;
+  .card + .card &#123;
+    margin-left: 16px;
+  &#125;
+  .card--modified &#123;
+    border: 1px darkslategrey solid;
+  &#125;
+  .card__title &#123;
+    color: blueviolet;
+    margin-top: 0;
+    margin-bottom: 16px;
+  &#125;
+  .card__title--alt &#123;
+    color: dodgerblue;
+  &#125;
+  .card__image &#123;
+    max-width: 100px;
+  &#125;
+  .card__button &#123;
+    appearance: none;
+    border: none;
+    border-radius: 4px;
+    background-color: darkslategrey;
+    color: white;
+    padding: 12px 24px;
+    cursor: pointer;
+  &#125;
+      </code>
+    </pre>
+  </section>
+  <section>
+    <h3>Output</h3>
+    <img src="assets/img/slide-example-images/slide-1-example.png" alt="">
+  </section>
+
+  <a [routerLink]="[ '/slide-4' ]" class="link link--prev">
+    <img src="assets/img/arrow-right.png" alt="">
+  </a>
+  <a [routerLink]="[ '/slide-6' ]" class="link link--next">
+    <img src="assets/img/arrow-right.png" alt="">
+  </a>
+</article>

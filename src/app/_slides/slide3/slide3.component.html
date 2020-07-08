@@ -1,0 +1,73 @@
+<article class="slide slide--code">
+  <header>
+    <h1>What is the cascade? What is specificity?</h1>
+    <h2>And what are the potential problems?</h2>
+  </header>
+  <section>
+    <h3>HTML</h3>
+  <pre class="prettyprint">
+    <code class="lang-html">
+  &lt;section&gt;
+    &lt;h2&gt;Articles&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;article&gt;
+        &lt;h3&gt;Article&lt;/h3&gt;
+        &lt;img src="assets/img/css-outline.png" alt="an image"&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;
+        &lt;button&gt;Click me&lt;/button&gt;
+      &lt;/article&gt;
+
+      &lt;article&gt;
+        &lt;h3 class="title"&gt;Article&lt;/h3&gt;
+        &lt;img src="assets/img/css-outline.png" alt="an image"&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;
+        &lt;button&gt;Click me&lt;/button&gt;
+      &lt;/article&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;</code>
+    </pre>
+  </section>
+
+  <section>
+    <h3>CSS</h3>
+    <pre class="prettyprint">
+      <code class="lang-css">
+  article &#123;
+    background-color: white;
+    max-width: 150px;
+    padding: 16px;
+  &#125;
+  article:first-of-type &#123;
+    border: 1px darkslategrey solid;
+  &#125;
+  .title &#123;
+    color: dodgerblue;
+  &#125;
+  h2,
+  h3 &#123;
+    color: darkslategrey;
+    margin-top: 0;
+    margin-bottom: 16px;
+  &#125;
+  h3 &#123;
+    color: blueviolet;
+  &#125;
+  img &#123;
+    max-width: 100px;
+  &#125;
+  </code>
+</pre>
+  </section>
+
+  <section>
+    <h3>Output</h3>
+    <img src="assets/img/slide-example-images/slide-1-example.png" alt="">
+  </section>
+
+  <a [routerLink]="[ '/slide-2' ]" class="link link--prev">
+    <img src="assets/img/arrow-right.png" alt="">
+  </a>
+  <a [routerLink]="[ '/slide-4' ]" class="link link--next">
+    <img src="assets/img/arrow-right.png" alt="">
+  </a>
+</article>

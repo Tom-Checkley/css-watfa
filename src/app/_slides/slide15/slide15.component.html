@@ -1,0 +1,29 @@
+<article class="slide slide--text">
+  <header>
+    <h1>Tailwind CSS</h1>
+  </header>
+  <section>
+    <pre class="prettyprint"><code class="lang-css">
+  @tailwind base;
+
+  @tailwind components;
+
+  .card &#123;
+      @apply bg-white max-w-150 p-4;
+  &#125;
+
+  .button &#123;
+      @apply appearance-none border-none bg-darkslategrey text-white px-6 py-3 cursor-pointer rounded;
+  &#125;
+
+  @tailwind utilities;
+    </code></pre>
+  </section>
+
+  <a [routerLink]="[ '/slide-14' ]" class="link link--prev">
+    <img src="assets/img/arrow-right.png" alt="">
+  </a>
+  <a [routerLink]="[ '/slide-16' ]" class="link link--next">
+    <img src="assets/img/arrow-right.png" alt="">
+  </a>
+</article>

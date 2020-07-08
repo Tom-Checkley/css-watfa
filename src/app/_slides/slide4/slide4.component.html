@@ -1,0 +1,35 @@
+<article class="slide slide--text">
+  <header>
+    <h1>BEM</h1>
+    <h2>Blocks, Elements and Modifiers</h2>
+  </header>
+  <section>
+    <p>BEM is the first methodolgy we'll look at. It looks at breaking elements and their child elements into reusable parts, with a strict naming structure for class names.</p>
+    <p>BEM is an abbreviation of the key elements of the methodology — Block, Element and Modifier. BEM’s strict naming rules can be found <a href="http://getbem.com/naming/">here</a>.</p>
+    <div class="grid">
+      <div>
+        <h3>Block</h3>
+        <p>Standalone entity that is meaningful on its own.</p>
+      </div>
+      <div>
+        <h3>Element</h3>
+        <p>A part of a block that has no standalone meaning and is semantically tied to its block.</p>
+      </div>
+      <div>
+        <h3>Modifier</h3>
+        <p>A flag on a block or element. Use them to change appearance or behavior.</p>
+      </div>
+    </div>
+    <p>A block/element relationship is divided by a double underscore. A modifier is denoted with a double hyphen.</p>
+    <pre class="prettyprint"><code class="lang-html">&lt;div class="block__element--modifier"&gt;Stuff&lt;div&gt;</code></pre>
+    <p><small>I stole some of this from <a href="http://getbem.com/introduction/">getbem.com/introduction/</a></small></p>
+  </section>
+
+
+  <a [routerLink]="[ '/slide-3' ]" class="link link--prev">
+    <img src="assets/img/arrow-right.png" alt="">
+  </a>
+  <a [routerLink]="[ '/slide-5' ]" class="link link--next">
+    <img src="assets/img/arrow-right.png" alt="">
+  </a>
+</article>

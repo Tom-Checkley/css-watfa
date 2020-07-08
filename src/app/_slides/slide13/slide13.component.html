@@ -1,0 +1,41 @@
+<article class="slide slide--text">
+  <header>
+    <h1>tailwind.config.js</h1>
+  </header>
+  <section>
+    <pre class="prettyprint">
+      <code class="lang-js">
+  module.exports = &#123;
+    purge: [],
+    theme: &#123;
+      extend: &#123;},
+      maxWidth: &#123;
+        100: "100px",
+        150: "150px"
+      &#125;,
+      colors: &#123;
+        white: "#ffffff",
+        gainsboro: "#dcdcdc",
+        darkslategrey: "#2f4f4f",
+        blueviolet: "#8a2be2",
+        dodgerblue: "#1e90ff",
+      &#125;
+    &#125;,
+    variants: &#123;&#125;,
+    plugins: [],
+    corePlugins: &#123;
+      preflight: false,
+    &#125;
+  &#125;
+      </code>
+    </pre>
+  </section>
+
+  <a [routerLink]="[ '/slide-12' ]" class="link link--prev">
+    <img src="assets/img/arrow-right.png" alt="">
+  </a>
+  <a [routerLink]="[ '/slide-14' ]" class="link link--next">
+    <img src="assets/img/arrow-right.png" alt="">
+  </a>
+</article>
+

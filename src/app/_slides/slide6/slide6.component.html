@@ -1,0 +1,51 @@
+<article class="slide slide--text">
+  <header>
+    <h1>Other methodologies</h1>
+  </header>
+  <section>
+    <div class="wrapper">
+      <div>
+        <h2>OOCSS</h2>
+        <h3>Object Orientated CSS</h3>
+        <p>Like BEM this is concerned with splitting out objects and their elements. And creating slightly more generic objects for example:</p>
+        <pre class="prettyprint">
+          <code class="lang-css">
+  #sidebar h3, #footer h3 &#123;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    line-height: 1;
+    color: #777;
+    text-shadow: rgba(0, 0, 0, .3) 3px 3px 6px;
+  &#125;
+
+  #footer h3 &#123;
+    font-size: 1.5em;
+    text-shadow: rgba(0, 0, 0, .3) 2px 2px 4px;
+  &#125;
+          </code>
+        </pre>
+        <a href="https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/">https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/</a>
+      </div>
+      <div>
+        <h2>SMACSS</h2>
+        <h3>Scalable Modular Architecture for CSS</h3>
+        <p>SMACSS (pronounced smacks) is about categorising CSS thus creating different classes for:</p>
+        <ol>
+          <li>Base</li>
+          <li>Layout</li>
+          <li>Module</li>
+          <li>State</li>
+          <li>Theme</li>
+        </ol>
+        <a href="http://smacss.com/">http://smacss.com/</a>
+      </div>
+    </div>
+  </section>
+
+  <a [routerLink]="[ '/slide-5' ]" class="link link--prev">
+    <img src="assets/img/arrow-right.png" alt="">
+  </a>
+  <a [routerLink]="[ '/slide-7' ]" class="link link--next">
+    <img src="assets/img/arrow-right.png" alt="">
+  </a>
+</article>

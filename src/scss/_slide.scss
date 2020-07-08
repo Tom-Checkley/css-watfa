@@ -1,0 +1,40 @@
+.slide {
+  background-color: #2f4f4f;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  padding: 2rem;
+  position: relative;
+}
+
+.slide--text {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  section {
+    max-width: 50rem;
+  }
+}
+
+.slide--code {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  header {
+    min-width: 100%;
+    padding-bottom: 2rem;
+
+  }
+
+  section {
+    flex: 0 0 32%;
+    overflow: auto;
+  }
+
+  section,
+  img {
+    border-radius: .25rem;
+  }
+}
