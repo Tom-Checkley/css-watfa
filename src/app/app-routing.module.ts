@@ -35,7 +35,8 @@ const routes: Routes = [
   { path: 'slide-14', component: Slide14Component },
   { path: 'slide-15', component: Slide15Component },
   { path: 'slide-16', component: Slide16Component },
-  { path: '', pathMatch: 'full', redirectTo: 'slide-1' }
+  { path: '', pathMatch: 'full', redirectTo: 'slide-1' },
+  { path: '**', component: Slide1Component }
 ];
 
 @NgModule({
